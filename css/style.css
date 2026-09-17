@@ -216,15 +216,9 @@ em { font-style: normal; }
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
   width: 36px;
   height: 36px;
-  border-radius: 11px;
-  background: var(--yellow);
-  color: var(--navy);
-  font-size: .8rem;
-  font-weight: 800;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
