@@ -1,0 +1,7 @@
+Thumbs.db
+.DS_Store
+
+# File sumber, tidak dipakai situs
+*.pblr
+*.docx
+assets/img/GambarCoverAyam.png

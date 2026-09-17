@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AR Ayam Berkokok | Pengabdian AR SMA Negeri 9 Bandar Lampung</title>
+<meta name="description" content="Karya Augmented Reality interaktif hasil pengabdian pengajaran AssemblrEdu di SMA Negeri 9 Bandar Lampung. Langsung jalan di browser, tanpa instal aplikasi.">
+<meta name="theme-color" content="#0B1533">
+<script>document.documentElement.classList.add("js")</script>
+<meta property="og:title" content="AR Ayam Berkokok | Pengabdian AR">
+<meta property="og:description" content="Coba AR interaktif langsung dari browser HP, tanpa instal aplikasi.">
+<meta property="og:image" content="assets/img/cover-ayam.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F7C948'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%230B1533'%3EAR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.css" integrity="sha384-gNKFsxEO/HxWOwNuzDJ+LC49+5LQTHKAZjdsSKgbraM36zXn2VDakftLnW9c7W3t" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<!-- Preloader -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <span class="preloader-word">AR<em>.</em>Pengabdian</span>
+    <span class="preloader-count"><span id="count">0</span>%</span>
+  </div>
+  <div class="preloader-bar"><span></span></div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <a href="#top" class="brand" aria-label="Beranda">
+    <span class="brand-mark">AR</span>
+    <span class="brand-text">Pengabdian<small data-site="school">SMA Negeri 9 Bandar Lampung</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Navigasi utama">
+    <a href="#program">Program</a>
+    <a href="#karya">Karya</a>
+    <a href="#cara">Cara Pakai</a>
+    <a href="#dokumentasi">Dokumentasi</a>
+  </nav>
+  <a href="#karya" class="btn btn-sm btn-yellow nav-cta magnetic">Mulai AR</a>
+  <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" aria-hidden="true">
+  <a href="#program">Program</a>
+  <a href="#karya">Karya</a>
+  <a href="#cara">Cara Pakai</a>
+  <a href="#dokumentasi">Dokumentasi</a>
+</div>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="dot"></span>Pengabdian Pengajaran AR · <span data-site="school">SMA Negeri 9 Bandar Lampung</span></p>
+        <h1 class="hero-title split">AR di genggaman, <span class="hl">tanpa ribet.</span></h1>
+        <p class="hero-sub reveal">Karya Augmented Reality buatan workshop AssemblrEdu. Buka di HP, tekan satu tombol, dan ayamnya langsung muncul di depan kamera. Tidak perlu instal aplikasi.</p>
+        <div class="hero-actions reveal">
+          <a href="#karya" class="btn btn-yellow magnetic">
+            Mulai AR
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#dokumentasi" class="btn btn-ghost magnetic">Lihat Dokumentasi</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="poster-card" id="poster">
+          <img src="assets/img/cover-ayam.jpg" alt="Poster modul AR 3D interaktif bertema ayam" width="900" height="1350" fetchpriority="high">
+          <div class="poster-shine" aria-hidden="true"></div>
+        </div>
+        <div class="float-chip chip-bubble" data-depth="1.6">Kukuruyukkk...</div>
+        <div class="float-chip chip-icon chip-blue" data-depth="1.2" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.7 3.7L12 11.7 5.3 8 12 4.3ZM5 9.7l6 3.3v6.7l-6-3.3V9.7Zm8 10v-6.7l6-3.3v6.7l-6 3.3Z" fill="currentColor"/></svg>
+        </div>
+        <div class="float-chip chip-icon chip-purple" data-depth="2" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4Zm-2.5-9v2.1a7 7 0 0 1 0 13.8V21a9 9 0 0 0 0-18Z" fill="currentColor"/></svg>
+        </div>
+        <div class="float-chip chip-icon chip-green" data-depth="1.4" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m8.6 16.6-4.6-4.6 4.6-4.6L7.2 6 1.2 12l6 6 1.4-1.4Zm6.8 0 4.6-4.6-4.6-4.6L16.8 6l6 6-6 6-1.4-1.4Z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </div>
+    <a href="#program" class="scroll-hint" aria-label="Gulir ke bawah"><span></span>Gulir</a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Augmented Reality</span><i>✦</i><span>AssemblrEdu</span><i>✦</i><span>Code Visual</span><i>✦</i><span>Text-to-Speech</span><i>✦</i><span data-site="school">SMA Negeri 9 Bandar Lampung</span><i>✦</i>
+      <span>Augmented Reality</span><i>✦</i><span>AssemblrEdu</span><i>✦</i><span>Code Visual</span><i>✦</i><span>Text-to-Speech</span><i>✦</i><span data-site="school">SMA Negeri 9 Bandar Lampung</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- Program -->
+  <section id="program" class="section program">
+    <div class="wrap">
+      <p class="label reveal"><span class="label-num">01</span>Program</p>
+      <h2 class="section-title split">Belajar bikin AR <em>tanpa coding</em>, lalu memakainya kapan saja.</h2>
+      <div class="program-grid">
+        <p class="lead reveal">Pengabdian ini mengenalkan konsep dasar Augmented Reality kepada siswa <strong data-site="school">SMA Negeri 9 Bandar Lampung</strong> lewat AssemblrEdu. Siswa belajar menempatkan objek 3D, menambah suara, bubble teks, dan menyusun logika interaktif dengan Code Visual. Hasilnya dikumpulkan di halaman ini supaya guru dan murid bisa langsung memakainya tanpa membuka AssemblrEdu lagi.</p>
+        <ul class="stats">
+          <li class="stat reveal"><span class="stat-num" data-count="1">0</span><span class="stat-label">Karya AR interaktif</span></li>
+          <li class="stat reveal"><span class="stat-num" data-count="3">0</span><span class="stat-label">Logika Code Visual</span></li>
+          <li class="stat reveal"><span class="stat-num" data-count="0">0</span><span class="stat-label">Aplikasi perlu diinstal</span></li>
+          <li class="stat reveal"><span class="stat-num" data-count="100" data-suffix="%">0</span><span class="stat-label">Jalan di browser</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Karya Unggulan -->
+  <section id="karya" class="section karya">
+    <div class="wrap karya-grid">
+      <div class="phone reveal-scale">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen" id="ar-screen">
+          <button class="ar-close" id="ar-close" aria-label="Keluar dari layar penuh">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Tutup
+          </button>
+          <div class="ar-launch" id="ar-launch">
+            <img id="ar-thumb" src="" alt="">
+            <div class="ar-launch-inner">
+              <span class="pulse" aria-hidden="true"></span>
+              <button class="btn btn-yellow" id="start-ar">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></svg>
+                Mulai AR
+              </button>
+              <small>Izinkan akses kamera saat diminta</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="karya-copy">
+        <p class="label reveal"><span class="label-num">02</span>Karya Unggulan</p>
+        <span class="tag reveal" id="project-subject"></span>
+        <h2 class="section-title split" id="project-title"></h2>
+        <p class="lead reveal" id="project-desc"></p>
+        <div class="interactions" id="project-interactions"></div>
+        <div class="karya-actions reveal">
+          <button class="btn btn-ghost" id="fullscreen-btn" disabled>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Layar Penuh
+          </button>
+          <button class="btn btn-ghost copy-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Salin Link</span>
+          </button>
+        </div>
+        <p class="hint reveal">Kamera tidak muncul? Izinkan akses kamera di pengaturan browser, lalu pakai Chrome atau Safari versi terbaru.</p>
+      </div>
+    </div>
+
+    <div class="wrap more-projects" id="more-projects" hidden>
+      <h3>Karya Lainnya</h3>
+      <div class="more-grid" id="more-grid"></div>
+    </div>
+  </section>
+
+  <!-- Cara Pakai -->
+  <section id="cara" class="section cara">
+    <div class="wrap">
+      <p class="label reveal"><span class="label-num">03</span>Cara Pakai</p>
+      <h2 class="section-title split">Empat langkah, <em>kurang dari satu menit.</em></h2>
+      <ol class="steps">
+        <li class="step"><span class="step-num">01</span><h3>Buka situs ini</h3><p>Pakai HP. Scan QR di bawah atau buka link yang dibagikan guru.</p></li>
+        <li class="step"><span class="step-num">02</span><h3>Tekan Mulai AR</h3><p>Viewer AssemblrEdu dimuat langsung di halaman ini.</p></li>
+        <li class="step"><span class="step-num">03</span><h3>Izinkan kamera</h3><p>Pilih "Izinkan" saat browser meminta akses kamera.</p></li>
+        <li class="step"><span class="step-num">04</span><h3>Mainkan</h3><p>Sentuh ayamnya untuk berkokok, tekan Play untuk mendengar penjelasannya.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Di Balik Layar -->
+  <section class="section logic">
+    <div class="wrap">
+      <p class="label reveal"><span class="label-num">04</span>Di Balik Layar</p>
+      <h2 class="section-title split">Tiga blok logika yang <em>menghidupkan</em> si ayam.</h2>
+      <div class="logic-grid">
+        <article class="logic-card">
+          <header><span class="logic-obj">Global</span><span class="logic-event">ketika scene dimulai</span></header>
+          <div class="block b-state">atur visibilitas <b>Bubble Kokok</b> ke <b>salah</b></div>
+          <div class="block b-state">atur visibilitas <b>Bubble Deskripsi</b> ke <b>salah</b></div>
+          <p>Tampilan awal bersih, tanpa dialog yang langsung muncul.</p>
+        </article>
+        <article class="logic-card">
+          <header><span class="logic-obj">Chicken White</span><span class="logic-event">ketika diklik</span></header>
+          <div class="block b-move">ganti animasi ke <b>Armature | Idle</b></div>
+          <div class="block b-sound">atur media <b>Suara Kokok</b> ke memutar</div>
+          <div class="block b-state">tampilkan lalu sembunyikan <b>Bubble Kokok</b></div>
+          <p>Efek "ayam berkokok" saat disentuh.</p>
+        </article>
+        <article class="logic-card">
+          <header><span class="logic-obj">Play</span><span class="logic-event">ketika diklik</span></header>
+          <div class="block b-state">tampilkan <b>Bubble Deskripsi</b>, sembunyikan <b>Bubble Kokok</b></div>
+          <div class="block b-sound">ucapkan bubble dengan <b>Google Bahasa Indonesia</b></div>
+          <p>Informasi tentang ayam disampaikan secara audio-visual.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagikan -->
+  <section class="section share">
+    <div class="wrap share-card reveal-scale">
+      <div class="share-copy">
+        <p class="label"><span class="label-num">05</span>Bagikan ke Kelas</p>
+        <h2 class="section-title">Tayangkan QR ini di proyektor, <em>murid tinggal scan.</em></h2>
+        <p class="lead">Semua murid bisa mencoba AR di HP masing-masing dalam hitungan detik.</p>
+        <button class="btn btn-yellow copy-link magnetic">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Salin Link</span>
+        </button>
+      </div>
+      <div class="qr-box">
+        <div id="qr" role="img" aria-label="QR code menuju halaman AR"></div>
+        <small>Scan untuk membuka AR</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dokumentasi -->
+  <section id="dokumentasi" class="section docs">
+    <div class="wrap">
+      <a class="docs-card" data-site-href="driveUrl" href="https://drive.google.com/drive/folders/1k8MBvo3wMi6KZpJC0miQroc3Y34HRQzL?usp=sharing" target="_blank" rel="noopener">
+        <p class="label"><span class="label-num">06</span>Dokumentasi</p>
+        <h2 class="docs-title">Lihat dokumentasi <em>pengabdian</em></h2>
+        <p class="lead">Foto kegiatan, modul langkah-langkah, dan informasi lengkap pengabdian di Google Drive.</p>
+        <span class="docs-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="34" height="34"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-tagline">Belajar · Berkarya · Berinovasi</p>
+        <p class="footer-meta"><span data-site="program">Pendidikan Teknologi Informasi</span><br>Pengabdian di <span data-site="school">SMA Negeri 9 Bandar Lampung</span></p>
+      </div>
+      <nav class="footer-links" aria-label="Tautan footer">
+        <a href="#program">Program</a>
+        <a href="#karya">Karya</a>
+        <a href="#cara">Cara Pakai</a>
+        <a data-site-href="driveUrl" href="https://drive.google.com/drive/folders/1k8MBvo3wMi6KZpJC0miQroc3Y34HRQzL?usp=sharing" target="_blank" rel="noopener">Google Drive ↗</a>
+      </nav>
+    </div>
+    <p class="footer-word" aria-hidden="true">AR<span>.</span>Pengabdian</p>
+    <p class="footer-copy">Dibuat dengan AssemblrEdu · <span id="year"></span></p>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js" integrity="sha384-wQImCCD/id1jPTwSloatzKlEpnEAQ5aH8H2Ud27FnNcJ1lf2+hB75ctoWnWxyD8X" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js" integrity="sha384-lQXOAyZwHXE55JFyrOMB7nY2Wv+m5ZWNtJcHrd1rceRQXAYNLak8ukN5TjBTcIwz" crossorigin="anonymous"></script>
+<script src="js/data/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
