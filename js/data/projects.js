@@ -2,6 +2,7 @@
 const SITE = {
   school: "SMA Negeri 9 Bandar Lampung",
   program: "Pendidikan Teknologi Informasi",
+  executor: "Teknik Informatika, Universitas Lampung",
   driveUrl: "https://drive.google.com/drive/folders/1k8MBvo3wMi6KZpJC0miQroc3Y34HRQzL?usp=sharing"
 };
 

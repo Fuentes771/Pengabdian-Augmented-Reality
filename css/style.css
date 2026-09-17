@@ -1110,6 +1110,8 @@ em { font-style: normal; }
   gap: 32px;
 }
 
+.footer-top > div:first-child { max-width: 480px; }
+
 .footer-tagline {
   font-family: var(--display);
   font-size: clamp(1.4rem, 3vw, 2rem);
@@ -1119,6 +1121,25 @@ em { font-style: normal; }
 }
 
 .footer-meta { color: var(--muted); margin: 0; font-size: .92rem; }
+
+.footer-credit {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.4;
+}
+
+.unila-logo {
+  height: 26px;
+  width: auto;
+  flex-shrink: 0;
+}
 
 .footer-links {
   display: flex;
